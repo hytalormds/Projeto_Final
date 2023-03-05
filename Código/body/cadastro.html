@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/estilo.css">
+    <title>Livraria Mil Palavras</title>
+</head>
+<body>
+<div class="form">
+    <form action="../bd e php/tcadastro.php" method="post">
+        <h1>Cadastro de Livro</h1>
+        <br>
+            Código ISBN * <input type="number" name="isbn" size="13" placeholder="Ex: 123-4-5678-9101-5" required><br><br>
+            Nome do Livro * <input type="text" name="nmlivro" size="50" placeholder="Ex: Memórias Póstumas de Brás Cubas" required><br><br>
+            Autor * <input type="text" name="nmautor" size="50" placeholder="Ex: Machado de Assis" required><br><br>
+            Editora * <input type="text" name="nmeditora" size="50" placeholder="Ex: Record" required><br><br>
+            Preço * <input type="number" name="preco" size="1000" placeholder="Ex: R$ 50.00"><br><br>
+            Opção de Livro: <br>
+            <label for="novo">Novo</label> &nbsp;
+            <input type="radio" name="opcao" id="op1"><br>
+            <label for="usado">Usado</label>
+            <input type="radio" name="opcao" id="op1"><br><br>
+            <input type="button" value="Salvar">&nbsp;
+            <input type="button" value="Cancelar">&nbsp;
+            <input type="button" value="Inserir">&nbsp;
+            <br><br>
+        </div>
+    </form>
+</div>
+</body>
+</html>
